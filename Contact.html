@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <title>Document</title>
+    <style>
+        .navbar-nav{
+            margin-left: 270px;
+        }.braek{
+            margin-left: 300px;
+            margin-top: -50px;
+        }
+    </style>
+</head>
+<body class="bg-info" >
+    <header>
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top">
+         <div class="container-fluid">
+         <a href="" class="navbar-brand">
+            <img src="data:image/png;base64,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" height="100" width="200" alt="" 
+            class="img-fluid rounded-circle">
+           
+            <span class="text-white fs-3 p-3">Mic College of Technology</span>
+            <div class="braek text-white">Atonomous</div>
+            
+         </a>
+         <button class="navbar-toggler" data-bs-target="#myn" data-bs-toggle="collapse">
+             <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="mynav">
+        <ul class="navbar-nav pe-5 fs-5 p-2" >
+            <li class="nav-item"><a href="Mic College.html" class="nav-link text-white">Home</a></li>
+            <li class="nav-item"><a href="" class="nav-link text-white">About</a></li>
+            <li class="nav-item"><a href="" class="nav-link text-white">Gallary</a></li>
+            <li class="nav-item"><a href="#Awards" class="nav-link  text-white">Awards</a></li>
+            <li class="nav-item"><a href="#contact" class="nav-link  text-white">Contact Us</a></li>
+        </ul>
+    </nav>
+</div>
+</div> 
+</header> 
+<br><br>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12">
+            <h1 class="text-center">DVR & Dr. HS </h1>
+            <h1 class="text-center">MIC COLLEGE OF TECHNOLOGY</h1>
+            <h1 class="text-center">ATONOMOUS</h1>
+        </div>
+    </div>
+</div>  
+<br><hr><br>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12"><h3 class="text-decoration-underline"><b>About College</b></h3>
+        <p>The DVR & Dr. HS MIC College of Technology (established in 2002) is a NAAC 'A' grade accredited engineering institution located in Kanchikacherla, Andhra Pradesh. It offers undergraduate (B.Tech), postgraduate (M.Tech, MBA, MCA), and Diploma programs. The flagship B.Tech program offers modern specializations like AI & ML, AI & DS, and CSE.</p>
+        <br>
+        <h3 class="text-decoration-underline"><b>Quick Facts at a Glance</b></h3>
+       <li>Affiliation: Permanently affiliated to JNTUK (Kakinada) and approved by AICTE.</li>
+       <li>Location: NH 9, Vijayawada - Hyderabad Highway, Kanchikacherla.</li>
+       <li>Flagship Courses: Computer Science, Artificial Intelligence, Electronics & Communication.</li>
+       <li>Fees: B.Tech tuition is typically around ₹40,000 per year, and PG courses are ₹35,000 - ₹50,000 per year.</li>
+       <li>Facilities: The campus includes state-of-the-art labs, a 600-capacity auditorium, on-campus hostels, Wi-Fi, and an outdoor gym.</li>
+       <br> <h3 class="text-decoration-underline"><b>Placements</b></h3>
+       <p>The college features a dedicated training and placement cell that attracts reputed multinational companies like TCS, Cognizant, Wipro, IBM, and Mindtree. Core companies are also known to visit for campus drives targeting electrical, mechanical, and electronics students.Admissions</p>
+    </div>
+    </div>
+</div>
+
+<hr>
+<div class="container " id="contact">
+    <div class="row">
+        <div class="col-lg-12">
+          <h3 class="text-decoration-underline"><b>Contact Us</b></h3>
+          <p>Here are the contact details for DVR & Dr. HS MIC College of Technology (Kanchikacherla, near Vijayawada & Hyderabad Highway):</p>
+          <li>Phone Numbers: +91 7382616824, +91 9491457799, 08678-273535</li>
+          <li>Email: info@mictech.ac.in (General), office@mictech.ac.in</li>
+          <li>Website: <a href=" DVR & Dr. HS MIC College of Technology">DVR & Dr. HS MIC College of Technology</a></li>
+          <li>Address: NH 9, Vijayawada - Hyderabad Highway, Kanchikacherla, N.T.R District, Andhra Pradesh - 521180</li>
+<br><p>(Note: If you are looking for the MIC Arts and Science College in Malappuram, Kerala, their contact is +91 8304831094 / micascollege@gmail.com).</p><br>
+      <h4 class="text-decoration-underline"><b>Help ?</b></h4>
+      <p>If you need specific departmental contacts, let me know. Do you need help reaching the Admissions Office, the Exam Cell, or the Placement Department?</p>
+        </div>
+    </div>
+</div>
+
+
+<hr>
+<footer class="bg-info">
+    <div class="container">
+    <div class="row">
+        <div class="col-4">
+            <h3 class="myn">Use Links</h3>
+        <br><li>
+         <h5>About College</h5></li>
+         <br>
+         <li><h5>Examinations</h5></li>
+         <br>
+         <li><h5>Admissions</h5></li>
+         <br>
+         <li><h5>Fee Payment</h5></li>
+         <br>
+        </div><br>
+        <div class="col-3 mt-5 " >
+           <li> <h5>Careers</h5></li>
+            <br>
+            <li><h5>Contact Us</h5></li>
+            <br>
+            <li><h5>Student Login</h5></li>
+        </div>
+        <div class="col-5">
+         <h3 class="myn2">Get In Touch</h3>
+         <br><li><p>NH 9, Vijayawada - Hyderabad Highway, Kanchikacherla,
+N.T.R District, Andhra Pradesh 521180</p></li>
+        <li><p>Mobile : +91 7382616824, 9491457799</p></li>
+        <li><p>Email : office@mictech.ac.in</p></li>
+        <li><p>Land Line : 08678-273535, 273569</p></li>
+            </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+          <p>For all Foreign University Admissions (To send Transcripts) mail ID used is:</p>
+            <a href="coe@mictech.ac.in">coe@mictech.ac.in</a>
+        </div>
+    </div>
+</div>
+<hr></footer>
+<div class="container-fluid bg-primary">
+    <div class="row">
+        <div class="col-12">
+          <p>Copyright © 2026 ALL Rights Reserved | Developed By MIC WebsiteTeam</p>
+
+        </div>
+    </div>
+</div>
+</body>
+</html>
+

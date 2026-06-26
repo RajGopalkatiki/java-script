@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <title>Document</title>
+    <style>
+        .navbar-nav{
+            margin-left: 215px;
+        }
+        .btn{
+            
+            border: 1px solid black;
+            background-color: aqua;
+        }
+        .braek{
+            margin-left: 300px;
+            margin-top: -50px;
+        }
+        .myn{
+            color: blue;
+        
+        }.mer{
+            margin-top: 100px;
+        }.myn2{
+            color: blue;
+        }
+        .btn{
+            margin-left: 850px;
+            margin-top: -70px;
+        }.btn1{
+            margin-left: -10px;
+            margin-top: -40px;
+            background-color: aqua;
+            border-radius: 6px;
+
+        }.btn2{
+             background-color: aqua;
+              border-radius: 6px;
+        }.btn3{
+             background-color: aqua;
+              border-radius: 6px;
+        }.btn4{
+             background-color: aqua;
+              border-radius: 6px;
+        }body{
+            background-image: url("");
+            background-size: cover;
+        }
+        
+        
+        
+    </style>
+</head>
+<body class="bg-secondary">
+    <header>
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top">
+         <div class="container-fluid">
+         <a href="" class="navbar-brand">
+            <img src="data:image/png;base64,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" height="100" width="200" alt="" 
+            class="img-fluid rounded-circle">
+           
+            <span class="text-white fs-3 p-3">Mic College of Technology</span>
+            <div class="braek text-white">Atonomous</div>
+            
+         </a>
+         <button class="navbar-toggler" data-bs-target="#myn" data-bs-toggle="collapse">
+             <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="mynav">
+        <ul class="navbar-nav pe-5 fs-5 p-2" >
+            <li class="nav-item"><a href="Mic College.html" class="nav-link text-white">Home</a></li>
+            <li class="nav-item"><a href="#About" class="nav-link text-white">About</a></li>
+            <li class="nav-item"><a href="gallery.html" class="nav-link text-white">Gallary</a></li>
+            <li class="nav-item"><a href="gallery.html" class="nav-link  text-white">Awards</a></li>
+            <li class="nav-item"><a href="Contact.html" class="nav-link  text-white">Contact Us</a></li>
+        </ul>
+    </nav>
+</div>
+</div> 
+</header>
+<div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2"></button>
+    </div>
+    <div class="carousel-inner">
+
+        <div class="carousel-item active">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj4AxxpKZ3nrkqdDgBtUlCjkJEM1EwDn_1SQ&s" height="500" width="1000"
+                 class="d-block w-100"
+                 alt="Image 1">
+        </div>
+
+        <div class="carousel-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVzNiReoYtcLRIFQSq5Ph0AawGVAYWJL8Kgg&s" height="500" width="600"
+                 class="d-block w-100"
+                 alt="Image 2">
+        </div>
+
+        <div class="carousel-item">
+            <img src="https://media.collegedekho.com/media/img/institute/crawled_images/MIC_College_of_Technologygy_Cover.jpg?width=1080" height="500" width="600"
+                 class="d-block w-100"
+                 alt="Image 3" >
+        </div>
+
+    </div>
+
+</div></div>
+<button class="carousel-control-prev"
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next"
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </button>
+</div>
+
+
+<hr>
+<div id="About">
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-9 "><h1 class="d-flex justify-content-center fs-1 fw-bold text-decoration-underline">Dr. Maganti Venkata Ramana Rao</h1><button class="btn">Chairmen</button><br>
+         <p >DVR & Dr. HS MIC College of Technology is an autonomous, NAAC "A" grade accredited engineering institution located in Kanchikacherla, Andhra Pradesh (near Vijayawada). Established in 2002 and affiliated with JNTUK, it offers undergraduate (B.Tech, Diploma), postgraduate (M.Tech, MBA, MCA), and doctoral programs with an annual fee ranging from ₹70,000 to ₹1,98,000.
+           Henry David Thoreau said, “Nothing succeeds like enthusiasm.” The Quality of enthusiasm contains a tremendous power to produce vigor, vitality, and joyfulness. It surmounts adversity and difficulty.
+
+Greatness and excellence in any field is achieved through enriched enthusiasm, meticulous planning, measured steps in the right direction and proactive approach. Banking on success in one field, a few successful people cast a wider net into other areas of expertise. MIC is blessed to have the visionary leadership of Dr. MV. Ramana Rao, an educationist-turned-entrepreneur par excellence who has carried his Midas’ touch into both industry and academia.
+<br><b>"Our college has emerged as one of the premier institutions in the region through our relentless efforts in the cause of education. I welcome you to the world of MIC where you will have an opportunity to learn technologies of the future, in the rich academic ambiance typical of MIC. Welcome aboard to enjoy the fruits of holistic education!”</b>        
+</p>
+        </div>
+        <div class="col-3">
+            <img src="data:image/jpeg;base64,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" 
+            width="300" alt="">
+           </div>
+        </div>
+</div><br>
+<hr>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-3">
+            <img src="https://www.mictech.edu.in/images/resource/vice-chairman.jpg" width="300">
+        </div>
+        <div class="col-9"><h1 class="text-decoration-underline d-flex justify-content-center"><b>Sri N Srinivasa Rao</b></h1><button class="btn1">Vice-Chairmen</button>
+      <p><b>“Congratulations to you on your career choice of pursuing an engineering education. We, at MIC, ensure that you enjoy boundless opportunities to experiment, learn and pursue your life’s goals.”</b><br>
+        Henry David Thoreau said, “Nothing succeeds like enthusiasm.” The Quality of enthusiasm contains a tremendous power to produce vigor, vitality, and joyfulness. It surmounts adversity and difficulty.<br><br>
+        An educationist by vocation and an entrepreneur by avocation, Sri N Srinivasa Rao, Vice-Chairman has avowed to contribute his experience and expertise to help the students enjoy the fruits of quality education in engineering. He is an able ally to our Chairman in achieving the goals of the institute.<br><br>
+        Very few people possess the quality of enthusiasm and zest and MIC is fortunate to have one such dignitary who is ‘fully human and fully alive to the needs of the student community in his years of service in the cause of education.
+        </div>
+    </div>
+</div><br><hr>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-3">
+           <img src="https://www.mictech.edu.in/images/resource/director.jpg" width="300">
+
+        </div>
+        <div class="col-9">
+            <h1 class="text-decoration-underline d-flex justify-content-center"><b>Sri M Srinivasa Rao</b></h1><button class="btn2">DIRECTOR (PLANNING & DEVELOPMENT)</button>
+        <p><b>“If you have the desire to achieve success in your chosen field, MIC is ready to provide all the facilities to make it happen. We have always been committed to helping the student community travel in the way they have always wanted to go. Welcome to MIC to chase your dreams and pursue your passion!”</b><br>    
+        <br>
+        Shiv Khera, one of the greatest motivational speakers and authors, reiterates that winners don’t do different things, they do things differently. Obstacles in the pathway of the weak become stepping stones in the pathway of the strong as Pandit Jawaharlal Nehru would put it, “Success comes to those who dare and act”.<br>
+        <br>
+        For any endeavor to be successful there must be people who do planning at an intellectual level and there are others who execute the plan at the grass-root practical level. Very rarely do we find a person who is adept at both planning and execution. Sri M Srinivasa Rao, Director (Planning & Development), is one such quality-conscious person who is raring to go to provide the right infrastructural ambiance on the premises for smooth functioning of the teaching-learning process.
+
+        </div>
+    </div>
+</div>
+<br>
+<hr>
+<br>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-3">
+            <img src="https://www.mictech.edu.in/images/resource/ceo.jpg" width="300">
+
+        </div>
+        <div class="col-9"><h1 class="text-decoration-underline d-flex justify-content-center"><b>Sri D. Panduranga Rao </b></h1><button class="btn3">CEO(Chief Executing Officer)</button>
+      <p><b>“We, at MIC, are fortunate to have a team focussed on the goals of the institution which fact makes it easier to reach both the long-term and short-term goals of the institution and this nature augurs well for everyone.”</b>
+<br>    <br>The name of Sri D. Panduranga Rao, CEO, is synonymous with meticulous planning and bubbling enthusiasm. His grip over administrative procedures and his unfathomable range of subject expertise are laudable.
+   Sri Rao has been associated with MIC since its inception in 2002. He served in various capacities as Vice-Principal, Secretary, and CEO. He is instrumental in bringing the vision of the management to its fruition.<br><br>
+Taking success gratefully, meeting the challenges of life and administration pragmatically, and attending to the needs of both students and staff has been his forte and that nature of his helped MIC stand in good stead.</p>
+        </div>
+    </div>
+</div>
+<br><br><hr><br>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-3">
+            <img src="https://www.mictech.edu.in/images/vamsee-kiran1.jpg" width="300">
+
+        </div>
+        <div class="col-9">
+            <h1 class="text-decoration-underline d-flex justify-content-center"><b>Dr. T. Vamsee Kiran</b></h1><button class="btn4">Principal</button>
+           <p><b>“Don’t judge each day by the harvest you reap but by the seeds that you plant” states Robert Louis Stevenson.</b>
+        <br><br>
+    As the quote succinctly suggests ‘our daily actions define our lives, career and future and they chart the path of our progress. The small acts that we do day in and day out adds up to make a big impact on our growth.’
+<br><br>Dr. T. Vamsee Kiran, Principal, enjoys two decades of vast experience and rich exposure as an academician and administrator. He has completed his schooling in Nirmala English Medium School, Mangalagiri. He did his intermediate in APRJC & B.Tech from Bapatla Engineering College. Having qualified in GATE exam, he pursued his M.E from PSG college of Technology, Coimbatore. Even as a student pursuing his M.E, he has the rare credential of completing 5 lakh DST sponsored project. He was awarded his doctoral degree by JNTU Hyderabad in the specialization of Power Electronics and Drives.
+<br><br>
+He began his career as Lecturer in Sir C R Reddy College of Engineering, Eluru during 2002 to 2004. Later he worked in KLCE(now KLU) from 2004 to 2005. His tryst with MIC College of Technology began in 2005 as Assistant Professor. By sheer dint of hard work, diligence and discipline, he climbed the ladder of administration as he was delegated with several responsibilities and he handled them with great élan and expertise. He was the Head of the department from 2008 to 2019. He also worked as Vice Principal from 2018 to 2019. He was ratified as Professor by JNTU Kakinada. In 2019, he joined GIET Engineering College, Rajahmundry as its Principal. In 2022, he took charge as Director-Academics at MIC College of Technology. And now from April 2023, he has taken over as Principal of the college.</p>
+        </div>
+        <div class="col-12">
+            <p>Dr. T. Vamsee Kiran has 14 publications in various international journals & has presented 9 papers in national & international conferences. He attended 20 national level workshops in various Institutions of great repute. He is a member of Professional societies like IE & ISTE. His areas of interest include Multilevel Inverters and Electric Drives. At present, he is guiding two Ph.D., scholars registered at JNTU Kakinada. Dr.Vamsee was given ‘Best Teacher’ award by the management of MIC College of Technology in 2008. He was also recognized as ‘Esteemed Employee’ in the academic year 2016-17, in recognition of his continued commitment and valuable contribution to the organization.
+                <br><br>Dr. Vamsee has delivered Guest Lectures, chaired sessions at various conferences, acted as judge and guest at several venues of technical events in various engineering colleges. He organized several events besides the regular academic work. Dr. Vamsee is well-versed with the NBA, NAAC and Autonomous related accreditation activities which are very essential for any engineering college.
+            </p>
+        </div>
+    </div>
+</div>
+<br><br><hr>
+
+<footer class="bg-info">
+    <div class="container">
+    <div class="row">
+        <div class="col-4">
+            <h3 class="myn">Use Links</h3>
+        <br><li>
+         <h5>About College</h5></li>
+         <br>
+         <li><h5>Examinations</h5></li>
+         <br>
+         <li><h5>Admissions</h5></li>
+         <br>
+         <li><h5>Fee Payment</h5></li>
+         <br>
+        </div><br>
+        <div class="col-3 mt-5 " >
+           <li> <h5>Careers</h5></li>
+            <br>
+            <li><h5>Contact Us</h5></li>
+            <br>
+            <li><h5>Student Login</h5></li>
+        </div>
+        <div class="col-5">
+         <h3 class="myn2">Get In Touch</h3>
+         <br><li><p>NH 9, Vijayawada - Hyderabad Highway, Kanchikacherla,
+N.T.R District, Andhra Pradesh 521180</p></li>
+        <li><p>Mobile : +91 7382616824, 9491457799</p></li>
+        <li><p>Email : office@mictech.ac.in</p></li>
+        <li><p>Land Line : 08678-273535, 273569</p></li>
+            </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-12">
+          <p>For all Foreign University Admissions (To send Transcripts) mail ID used is:</p>
+            <a href="coe@mictech.ac.in">coe@mictech.ac.in</a>
+        </div>
+    </div>
+</div>
+<hr></footer>
+<div class="container-fluid bg-primary">
+    <div class="row">
+        <div class="col-12">
+          <p>Copyright © 2026 ALL Rights Reserved | Developed By MIC WebsiteTeam</p>
+
+        </div>
+    </div>
+</div>
+</body>
+</html>
